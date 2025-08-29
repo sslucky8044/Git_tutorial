@@ -1,7 +1,7 @@
 1  git-tutorial > new_key.txt
 2  ssh-keygen -t rsa -b 4096 -C "email@gmail.com"
-3  eval "$(ssh-agent -s)"
+3  eval "$(ssh-agent -s)" ( is a linux/mac command and won't run in powershell )
 4  ssh-add ~/.ssh/id_rsa
-5  cat ~/.ssh/id_rsa.pub
+5  cat ~/.ssh/id_rsa_github.pub
    (then copy the content)
 6  copy and paste the ssh key on Github/Gitlab
